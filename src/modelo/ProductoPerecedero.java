@@ -46,9 +46,8 @@ public class ProductoPerecedero extends Producto {
     }
     @Override
     public String mostrarInformacion(){
-        return "[PERECEDERO] " +super.mostrarInformacion() +
-                " | Caducidad: " + fechaCaducidad +
-                " | Días para vencer: " + diasParaVencer +
-                " | Precio Final Venta: $" + String.format("%.2f", calcularPrecioVenta());
+        return "[PERECEDERO] " + super.mostrarInformacion()
+                + "\n   Caducidad: " + fechaCaducidad + " | Días para vencer: " + diasParaVencer
+                + " | Precio Venta Final: $" + String.format("%.2f", calcularPrecioVenta());
     }
 }

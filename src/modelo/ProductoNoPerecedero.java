@@ -45,9 +45,8 @@ public class ProductoNoPerecedero extends Producto{
     }
     @Override
     public String mostrarInformacion(){
-        return "[NO PERECEDERO] " +super.mostrarInformacion() +
-                " | Ubicación de la bodega: " + ubicacionBodega +
-                " | Meses de garantía: " + mesesGarantia +
-                " | Precio Final Venta: $" + String.format("%.2f", calcularPrecioVenta());
+        return "[NO PERECEDERO] " + super.mostrarInformacion()
+                + "\n   Ubicación: " + ubicacionBodega + " | Garantía: " + mesesGarantia + " meses"
+                + " | Precio Venta Final: $" + String.format("%.2f", calcularPrecioVenta());
     }
 }
